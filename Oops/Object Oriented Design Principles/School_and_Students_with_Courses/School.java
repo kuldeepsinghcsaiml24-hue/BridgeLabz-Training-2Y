@@ -1,0 +1,1 @@
+import java.util.*; class School { String name; List<Student> students=new ArrayList<>(); School(String name){this.name=name;} void addStudent(Student s){students.add(s);} void showStudents(){System.out.println("Students in "+name+":"); for(Student s:students)System.out.println(s.name);} }

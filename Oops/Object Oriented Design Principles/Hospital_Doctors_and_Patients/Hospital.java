@@ -1,0 +1,1 @@
+import java.util.*; class Hospital { String name; List<Doctor> doctors=new ArrayList<>(); Hospital(String name){this.name=name;} void addDoctor(Doctor d){doctors.add(d);} void showDoctors(){System.out.println("Doctors in "+name+":"); for(Doctor d:doctors)System.out.println(d.name);} }

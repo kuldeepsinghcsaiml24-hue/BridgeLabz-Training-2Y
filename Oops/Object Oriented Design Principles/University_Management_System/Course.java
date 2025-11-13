@@ -1,0 +1,1 @@
+class Course { String title; Professor professor; Course(String title,Professor professor){this.title=title;this.professor=professor;} }

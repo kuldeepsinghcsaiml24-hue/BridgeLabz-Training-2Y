@@ -1,0 +1,1 @@
+public class UniversityMain { public static void main(String[] args){ Faculty f=new Faculty("Dr. Sharma"); Department d=new Department("Computer Science",f); University u=new University("Tech University"); u.addDepartment(d); u.showInfo(); } }
