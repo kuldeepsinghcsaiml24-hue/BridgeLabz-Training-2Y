@@ -1,0 +1,1 @@
+public class LibraryMain { public static void main(String[] args){ Library lib=new Library(); lib.addBook(new Book("Java Basics","James Gosling")); lib.addBook(new Book("Effective Java","Joshua Bloch")); lib.showBooks(); } }

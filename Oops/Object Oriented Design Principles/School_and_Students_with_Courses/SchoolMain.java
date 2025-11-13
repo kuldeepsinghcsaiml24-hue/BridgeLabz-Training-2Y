@@ -1,0 +1,1 @@
+public class SchoolMain { public static void main(String[] args){ Course math=new Course("Mathematics"); School school=new School("BridgeLabz School"); Student s1=new Student("Kuldeep",math); school.addStudent(s1); school.showStudents(); } }

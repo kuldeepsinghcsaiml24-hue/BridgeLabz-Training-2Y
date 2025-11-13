@@ -1,0 +1,1 @@
+class Department { String name; Faculty faculty; Department(String name,Faculty faculty){this.name=name;this.faculty=faculty;} void display(){System.out.println("Department: "+name+" | Faculty: "+faculty.name);} }

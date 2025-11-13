@@ -1,0 +1,1 @@
+import java.util.*; class University { String name; List<Department> departments=new ArrayList<>(); University(String name){this.name=name;} void addDepartment(Department d){departments.add(d);} void showInfo(){System.out.println("University: "+name); for(Department d:departments)d.display();} }

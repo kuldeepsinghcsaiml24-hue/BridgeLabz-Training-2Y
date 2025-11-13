@@ -1,0 +1,1 @@
+public class HospitalMain { public static void main(String[] args){ Hospital h=new Hospital("City Hospital"); Doctor d=new Doctor("Dr. Gupta"); h.addDoctor(d); h.showDoctors(); } }

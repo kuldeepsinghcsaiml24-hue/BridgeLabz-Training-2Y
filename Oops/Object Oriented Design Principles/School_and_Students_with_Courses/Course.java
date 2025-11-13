@@ -1,0 +1,1 @@
+class Course { String title; Course(String title){this.title=title;} }
