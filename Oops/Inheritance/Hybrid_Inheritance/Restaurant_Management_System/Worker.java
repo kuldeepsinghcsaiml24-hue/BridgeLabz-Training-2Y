@@ -1,0 +1,1 @@
+interface Worker { void performDuties(); }
