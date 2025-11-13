@@ -1,1 +1,0 @@
-public class ECommerceMain { public static void main(String[] args){ Product p1=new Product("Laptop",70000); Product p2=new Product("Mouse",1500); Order order=new Order(); order.addProduct(p1); order.addProduct(p2); order.showOrder(); } }

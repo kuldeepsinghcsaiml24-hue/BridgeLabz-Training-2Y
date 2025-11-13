@@ -1,1 +1,0 @@
-public class VehicleMain { public static void main(String[] args){ ElectricVehicle ev=new ElectricVehicle(150,"EV-Model"); PetrolVehicle pv=new PetrolVehicle(180,"Petrol-Model"); ev.charge(); pv.refuel(); } }

@@ -1,1 +1,0 @@
-public class SchoolMain { public static void main(String[] args){ Teacher t=new Teacher("Mrs. Rao",40,"Math"); Student s=new Student("Amit",15,10); Staff st=new Staff("Rita",30,"Admin"); t.displayRole(); s.displayRole(); st.displayRole(); } }

@@ -1,1 +1,0 @@
-class Customer { String name; Bank bank; Customer(String name,Bank bank){this.name=name;this.bank=bank;} void display(){System.out.println(name+" is associated with bank "+bank.name);} }

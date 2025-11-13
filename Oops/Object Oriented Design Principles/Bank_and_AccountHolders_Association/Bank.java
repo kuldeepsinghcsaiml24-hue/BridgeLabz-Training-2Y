@@ -1,1 +1,0 @@
-class Bank { String name; Bank(String name){this.name=name;} }

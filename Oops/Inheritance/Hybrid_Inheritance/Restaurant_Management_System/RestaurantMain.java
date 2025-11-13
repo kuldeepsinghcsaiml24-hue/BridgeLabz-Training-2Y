@@ -1,1 +1,0 @@
-public class RestaurantMain { public static void main(String[] args){ Worker[] workers = { new Chef("Raj",1), new Waiter("Simran",2) }; for(Worker w: workers) w.performDuties(); } }

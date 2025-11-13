@@ -1,1 +1,0 @@
-class Student { String name; Course course; Student(String name,Course course){this.name=name;this.course=course;} }

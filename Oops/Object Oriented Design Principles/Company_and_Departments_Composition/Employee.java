@@ -1,1 +1,0 @@
-class Employee { String name; String department; Employee(String name,String department){this.name=name;this.department=department;} void display(){System.out.println(name+" works in "+department+" department.");} }

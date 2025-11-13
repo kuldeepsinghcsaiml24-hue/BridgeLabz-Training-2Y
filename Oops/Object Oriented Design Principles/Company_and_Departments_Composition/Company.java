@@ -1,1 +1,0 @@
-import java.util.*; class Company { String name; List<Department> departments; Company(String name){this.name=name;departments=new ArrayList<>();} void addDepartment(String deptName){departments.add(new Department(deptName));} void showDepartments(){System.out.println("Departments in "+name+":"); for(Department d:departments)System.out.println(d.name);} }

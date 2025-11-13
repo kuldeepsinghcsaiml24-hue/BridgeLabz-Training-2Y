@@ -1,1 +1,0 @@
-public class UniversityMain { public static void main(String[] args){ Professor p=new Professor("Dr. Verma"); Course c=new Course("AI & ML",p); Student s=new Student("Kuldeep"); System.out.println(s.name+" enrolled in "+c.title+" taught by "+c.professor.name); } }

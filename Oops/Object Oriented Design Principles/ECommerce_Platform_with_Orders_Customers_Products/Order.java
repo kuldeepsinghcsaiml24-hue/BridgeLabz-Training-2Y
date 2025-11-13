@@ -1,1 +1,0 @@
-import java.util.*; class Order { List<Product> products=new ArrayList<>(); void addProduct(Product p){products.add(p);} void showOrder(){for(Product p:products)System.out.println(p.name+" - $"+p.price);} }

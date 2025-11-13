@@ -1,1 +1,0 @@
-public class BankMain { public static void main(String[] args){ Bank bank=new Bank("SBI"); Customer c1=new Customer("Kuldeep",bank); c1.display(); } }
