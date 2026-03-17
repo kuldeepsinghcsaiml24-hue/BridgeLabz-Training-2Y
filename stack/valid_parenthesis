@@ -1,0 +1,45 @@
+import java.util.Stack;
+import java.util.Scanner;
+
+public class ValidParentheses {
+
+    public static boolean isValid(String s) {
+
+        Stack<Character> stack = new Stack<>();
+
+        for(char c : s.toCharArray()) {
+
+            // If opening bracket, push to stack
+            if(c == '(' || c == '{' || c == '[') {
+                stack.push(c);
+            }
+            else {
+
+                // If stack empty and closing bracket appears
+                if(stack.isEmpty()) {
+                    return false;
+                }
+
+                char top = stack.pop();
+
+                if(c == ')' && top != '(') return false;
+                if(c == '}' && top != '{') return false;
+                if(c == ']' && top != '[') return false;
+            }
+        }
+        return stack.isEmpty();
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+
+        boolean result = isValid(input);
+        if(result) {
+            System.out.println("Valid Parentheses");
+        } else {
+            System.out.println("Invalid Parentheses");
+        }
+    }
+}
