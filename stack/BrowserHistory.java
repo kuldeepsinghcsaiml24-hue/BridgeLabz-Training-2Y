@@ -1,24 +1,22 @@
 import java.util.Stack;
 import java.util.Scanner;
 
-class BrowserHistory {
+class HistoryManager {
     private Stack<String> backStack = new Stack<>();
     private Stack<String> forwardStack = new Stack<>();
 
-    public BrowserHistory(String homepage) {
+    public HistoryManager(String homepage) {
         backStack.push(homepage);
         System.out.println("Started at: " + homepage);
     }
 
     public void visit(String url) {
-        // Clear forward history whenever a new URL is visited
         forwardStack.clear();
         backStack.push(url);
         System.out.println("Visited: " + url);
     }
 
     public String back(int steps) {
-        // Move elements to forwardStack, but always keep the first page in backStack
         while (backStack.size() > 1 && steps > 0) {
             forwardStack.push(backStack.pop());
             steps--;
@@ -27,7 +25,6 @@ class BrowserHistory {
     }
 
     public String forward(int steps) {
-        // Move elements back to backStack from forwardStack
         while (!forwardStack.isEmpty() && steps > 0) {
             backStack.push(forwardStack.pop());
             steps--;
@@ -36,13 +33,13 @@ class BrowserHistory {
     }
 }
 
-public class Main {
+public class BrowserHistory {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
         System.out.print("Enter homepage URL: ");
         String home = scanner.nextLine();
-        BrowserHistory browser = new BrowserHistory(home);
+        HistoryManager browser = new HistoryManager(home);
 
         while (true) {
             System.out.println("\nCommands: visit [url] | back [steps] | forward [steps] | exit");

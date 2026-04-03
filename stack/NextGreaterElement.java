@@ -1,5 +1,5 @@
-import java.util.*;
 import java.util.Stack;
+import java.util.Scanner;
 
 public class NextGreaterElement {
     public static int[] nextGreater(int[] arr) {
